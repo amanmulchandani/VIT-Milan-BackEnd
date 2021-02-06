@@ -1,0 +1,23 @@
+package com.vit.community.springapplication;
+
+import com.vit.community.springapplication.config.SwaggerConfiguration;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Import;
+import org.springframework.scheduling.annotation.EnableAsync;
+
+/*
+*
+* */
+
+@SpringBootApplication
+@EnableAsync
+@Import(SwaggerConfiguration.class)
+public class SpringCommunityApplication {
+
+    public static void main(String[] args) {
+
+        SpringApplication.run(SpringCommunityApplication.class, args);
+    }
+
+}
